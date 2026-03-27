@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #3B6B3B;
+  --color-forest-dark: #2A5230;
+  --color-forest-light: #4A8A4A;
+  --color-dusty-pink: #C4918A;
+  --color-dusty-pink-light: #F2DDD8;
+  --color-dusty-pink-bg: #FDF6F4;
+  --color-earth: #6B5344;
+  --color-earth-dark: #4A3728;
+  --color-earth-light: #8B7565;
+  --color-warm-bg: #F5F0E8;
+  --color-warm-card: #FDFBF7;
+  --color-warm-border: #E8E0D4;
+  --color-beige: #FAF7F2;
+  --color-beige-dark: #EDE8DE;
+  --color-pastel-blue: #A8C8E8;
+  --color-muted: #9CA3AF;
+  --color-text: #4A3728;
+  --color-text-light: #8B7565;
+  --font-title: 'Playfair Display', 'Georgia', serif;
+  --font-logo: 'Cinzel Decorative', 'Playfair Display', 'Georgia', serif;
+  --font-accent: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'DM Sans', 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--color-warm-bg);
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+  }
+
+  #root {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100svh;
+  }
+}
