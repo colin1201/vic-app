@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Costaline';
+  src: url('/fonts/Costaline-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-forest: #3B6B3B;
   --color-forest-dark: #2A5230;
@@ -7,6 +15,10 @@
   --color-dusty-pink: #C4918A;
   --color-dusty-pink-light: #F2DDD8;
   --color-dusty-pink-bg: #FDF6F4;
+  --color-amber: #C27856;
+  --color-amber-dark: #A86545;
+  --color-amber-light: #DBA88E;
+  --color-amber-bg: #FAF0EB;
   --color-earth: #6B5344;
   --color-earth-dark: #4A3728;
   --color-earth-light: #8B7565;
@@ -20,7 +32,7 @@
   --color-text: #4A3728;
   --color-text-light: #8B7565;
   --font-title: 'Playfair Display', 'Georgia', serif;
-  --font-logo: 'Cinzel Decorative', 'Playfair Display', 'Georgia', serif;
+  --font-logo: 'Costaline', 'Cinzel Decorative', 'Playfair Display', 'Georgia', serif;
   --font-accent: 'Cormorant Garamond', 'Georgia', serif;
   --font-body: 'DM Sans', 'Inter', system-ui, sans-serif;
 }
@@ -36,8 +48,23 @@
   }
 
   #root {
-    max-width: 480px;
+    max-width: 768px;
     margin: 0 auto;
     min-height: 100svh;
+    overflow-x: hidden;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  input, select, textarea {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    #root {
+      max-width: 960px;
+    }
   }
 }

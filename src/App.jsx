@@ -6,6 +6,9 @@ import PersonPage from './pages/PersonPage';
 import Schedule from './pages/Schedule';
 import Calendar from './pages/Calendar';
 import PrayerRequests from './pages/PrayerRequests';
+import Posts from './pages/Posts';
+import Worship from './pages/Worship';
+import WorshipSetup from './pages/WorshipSetup';
 
 export default function App() {
   return (
@@ -18,6 +21,9 @@ export default function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/prayer" element={<PrayerRequests />} />
+          <Route path="/announcements" element={<Posts />} />
+          <Route path="/worship" element={<Worship />} />
+          <Route path="/worship/setup" element={<WorshipSetup />} />
         </Routes>
       </AppProvider>
     </BrowserRouter>
